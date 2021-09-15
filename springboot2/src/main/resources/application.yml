@@ -1,0 +1,28 @@
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: utf-8
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+    jsp:
+      init-parameters:
+        development: true
+spring:
+  messages:
+    encoding: UTF-8
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+
+# 配置视图解析器
+bir: 2012/12/12 12:12:12
+lists: 1111,2222,3333
+maps: "{'name':'老王','sex':'男'}"
+users:
+  id: 20
+  name: 陈建军
+  age: 22

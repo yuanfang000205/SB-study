@@ -1,0 +1,10 @@
+# 公共配置
+server:
+  port: 8080 # 修改端口号，默认8080
+#  servlet:
+#    context-path:     # 修改访问项目路径，必须带"/",默认不带项目名
+
+# 配置使用哪个环境
+spring:
+  profiles:
+    active: prod

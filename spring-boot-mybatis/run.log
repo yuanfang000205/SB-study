@@ -1,0 +1,154 @@
+2021-09-14 11:18:10.225  INFO 5348 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Starting SpringBootMybatisApplication using Java 1.8.0_121 on TYF666 with PID 5348 (F:\SBProjects\spring-boot-mybatis\target\classes started by yuanFangT in F:\SBProjects\spring-boot-mybatis)
+2021-09-14 11:18:10.230  INFO 5348 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : No active profile set, falling back to default profiles: default
+2021-09-14 11:18:10.466  INFO 5348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 11:18:10.466  INFO 5348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 11:18:12.171  INFO 5348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2021-09-14 11:18:12.171  INFO 5348 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-14 11:18:12.171  INFO 5348 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-14 11:18:12.257  INFO 5348 --- [restartedMain] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
+2021-09-14 11:18:12.257  INFO 5348 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1788 ms
+2021-09-14 11:18:13.077  INFO 5348 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-14 11:18:13.126  INFO 5348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/springboot'
+2021-09-14 11:18:13.136  INFO 5348 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Started SpringBootMybatisApplication in 3.926 seconds (JVM running for 5.799)
+2021-09-14 11:19:10.244  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Starting SpringBootMybatisApplication using Java 1.8.0_121 on TYF666 with PID 6280 (F:\SBProjects\spring-boot-mybatis\target\classes started by yuanFangT in F:\SBProjects\spring-boot-mybatis)
+2021-09-14 11:19:10.244 DEBUG 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-09-14 11:19:10.244  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : No active profile set, falling back to default profiles: default
+2021-09-14 11:19:10.304  INFO 6280 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-14 11:19:10.304  INFO 6280 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-14 11:19:11.430  INFO 6280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2021-09-14 11:19:11.446  INFO 6280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-14 11:19:11.446  INFO 6280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-14 11:19:11.547  INFO 6280 --- [restartedMain] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
+2021-09-14 11:19:11.547  INFO 6280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1242 ms
+2021-09-14 11:19:12.326  INFO 6280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-14 11:19:12.371  INFO 6280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/springboot'
+2021-09-14 11:19:12.371  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Started SpringBootMybatisApplication in 2.64 seconds (JVM running for 3.793)
+2021-09-14 11:20:31.163  INFO 11284 --- [main] com.yuanfang.UserServiceTests            : Starting UserServiceTests using Java 1.8.0_121 on TYF666 with PID 11284 (started by yuanFangT in F:\SBProjects\spring-boot-mybatis)
+2021-09-14 11:20:31.163 DEBUG 11284 --- [main] com.yuanfang.UserServiceTests            : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-09-14 11:20:31.163  INFO 11284 --- [main] com.yuanfang.UserServiceTests            : No active profile set, falling back to default profiles: default
+2021-09-14 11:20:34.249  INFO 11284 --- [main] com.yuanfang.UserServiceTests            : Started UserServiceTests in 3.877 seconds (JVM running for 5.674)
+2021-09-14 11:20:34.862  INFO 11284 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-14 11:20:36.168 DEBUG 11284 --- [main] com.yuanfang.dao.UserDAO.findAll         : ==>  Preparing: select id,name,age from t_user 
+2021-09-14 11:20:36.208 DEBUG 11284 --- [main] com.yuanfang.dao.UserDAO.findAll         : ==> Parameters: 
+2021-09-14 11:20:36.258 DEBUG 11284 --- [main] com.yuanfang.dao.UserDAO.findAll         : <==      Total: 2
+2021-09-14 11:20:36.302  INFO 11284 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-09-14 11:20:36.305  INFO 11284 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-09-14 11:24:23.759  INFO 13040 --- [main] com.yuanfang.UserServiceTests            : Starting UserServiceTests using Java 1.8.0_121 on TYF666 with PID 13040 (started by yuanFangT in F:\SBProjects\spring-boot-mybatis)
+2021-09-14 11:24:23.759 DEBUG 13040 --- [main] com.yuanfang.UserServiceTests            : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-09-14 11:24:23.759  INFO 13040 --- [main] com.yuanfang.UserServiceTests            : No active profile set, falling back to default profiles: default
+2021-09-14 11:24:26.871  INFO 13040 --- [main] com.yuanfang.UserServiceTests            : Started UserServiceTests in 3.644 seconds (JVM running for 4.896)
+2021-09-14 11:24:27.247  INFO 13040 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-14 11:24:28.241 DEBUG 13040 --- [main] c.yuanfang.service.impl.UserServiceImpl  : id：null===》姓名：小明===》年龄：50
+2021-09-14 11:24:28.373 DEBUG 13040 --- [main] com.yuanfang.dao.UserDAO.save            : ==>  Preparing: insert into t_user values (?,?,?) 
+2021-09-14 11:24:28.407 DEBUG 13040 --- [main] com.yuanfang.dao.UserDAO.save            : ==> Parameters: 3(Integer), 小明(String), 50(Integer)
+2021-09-14 11:24:28.418 DEBUG 13040 --- [main] com.yuanfang.dao.UserDAO.save            : <==    Updates: 1
+2021-09-14 11:24:28.511  INFO 13040 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-09-14 11:24:28.519  INFO 13040 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-09-14 11:25:32.635  INFO 6280 --- [Thread-11] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2021-09-14 11:25:32.839  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Starting SpringBootMybatisApplication using Java 1.8.0_121 on TYF666 with PID 6280 (F:\SBProjects\spring-boot-mybatis\target\classes started by yuanFangT in F:\SBProjects\spring-boot-mybatis)
+2021-09-14 11:25:32.840 DEBUG 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-09-14 11:25:32.840  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : No active profile set, falling back to default profiles: default
+2021-09-14 11:25:33.139  INFO 6280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2021-09-14 11:25:33.140  INFO 6280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-14 11:25:33.140  INFO 6280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-14 11:25:33.169  INFO 6280 --- [restartedMain] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
+2021-09-14 11:25:33.169  INFO 6280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 325 ms
+2021-09-14 11:25:33.358  INFO 6280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-14 11:25:33.376  INFO 6280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/springboot'
+2021-09-14 11:25:33.381  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Started SpringBootMybatisApplication in 0.581 seconds (JVM running for 384.792)
+2021-09-14 11:25:33.384  INFO 6280 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-09-14 11:25:50.798  INFO 6280 --- [Thread-17] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2021-09-14 11:25:51.033  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Starting SpringBootMybatisApplication using Java 1.8.0_121 on TYF666 with PID 6280 (F:\SBProjects\spring-boot-mybatis\target\classes started by yuanFangT in F:\SBProjects\spring-boot-mybatis)
+2021-09-14 11:25:51.039 DEBUG 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-09-14 11:25:51.040  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : No active profile set, falling back to default profiles: default
+2021-09-14 11:25:51.373  INFO 6280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2021-09-14 11:25:51.374  INFO 6280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-14 11:25:51.375  INFO 6280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-14 11:25:51.412  INFO 6280 --- [restartedMain] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
+2021-09-14 11:25:51.413  INFO 6280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 364 ms
+2021-09-14 11:25:51.567  INFO 6280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-14 11:25:51.590  INFO 6280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/springboot'
+2021-09-14 11:25:51.596  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Started SpringBootMybatisApplication in 0.648 seconds (JVM running for 403.006)
+2021-09-14 11:25:51.597  INFO 6280 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-09-14 11:27:02.601  INFO 8048 --- [main] com.yuanfang.UserServiceTests            : Starting UserServiceTests using Java 1.8.0_121 on TYF666 with PID 8048 (started by yuanFangT in F:\SBProjects\spring-boot-mybatis)
+2021-09-14 11:27:02.608 DEBUG 8048 --- [main] com.yuanfang.UserServiceTests            : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-09-14 11:27:02.610  INFO 8048 --- [main] com.yuanfang.UserServiceTests            : No active profile set, falling back to default profiles: default
+2021-09-14 11:27:05.112  INFO 8048 --- [main] com.yuanfang.UserServiceTests            : Started UserServiceTests in 3.094 seconds (JVM running for 4.477)
+2021-09-14 11:27:05.449  INFO 8048 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-14 11:27:06.502 DEBUG 8048 --- [main] c.yuanfang.service.impl.UserServiceImpl  : id：null===》姓名：小明===》年龄：50
+2021-09-14 11:27:06.527 DEBUG 8048 --- [main] com.yuanfang.dao.UserDAO.save            : ==>  Preparing: insert into t_user values (?,?,?) 
+2021-09-14 11:27:06.547 DEBUG 8048 --- [main] com.yuanfang.dao.UserDAO.save            : ==> Parameters: 3(Integer), 小明(String), 50(Integer)
+2021-09-14 11:27:06.710  INFO 8048 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-09-14 11:27:06.717  INFO 8048 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-09-14 11:27:31.319  INFO 2352 --- [main] com.yuanfang.UserServiceTests            : Starting UserServiceTests using Java 1.8.0_121 on TYF666 with PID 2352 (started by yuanFangT in F:\SBProjects\spring-boot-mybatis)
+2021-09-14 11:27:31.322 DEBUG 2352 --- [main] com.yuanfang.UserServiceTests            : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-09-14 11:27:31.322  INFO 2352 --- [main] com.yuanfang.UserServiceTests            : No active profile set, falling back to default profiles: default
+2021-09-14 11:27:34.524  INFO 2352 --- [main] com.yuanfang.UserServiceTests            : Started UserServiceTests in 3.713 seconds (JVM running for 5.09)
+2021-09-14 11:27:34.860  INFO 2352 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-14 11:27:35.900 DEBUG 2352 --- [main] c.yuanfang.service.impl.UserServiceImpl  : id：null===》姓名：小明===》年龄：50
+2021-09-14 11:27:35.923 DEBUG 2352 --- [main] com.yuanfang.dao.UserDAO.save            : ==>  Preparing: insert into t_user values (?,?,?) 
+2021-09-14 11:27:35.949 DEBUG 2352 --- [main] com.yuanfang.dao.UserDAO.save            : ==> Parameters: null, 小明(String), 50(Integer)
+2021-09-14 11:27:35.955 DEBUG 2352 --- [main] com.yuanfang.dao.UserDAO.save            : <==    Updates: 1
+2021-09-14 11:27:36.086  INFO 2352 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-09-14 11:27:36.088  INFO 2352 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-09-14 11:28:00.866  INFO 6280 --- [Thread-21] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2021-09-14 11:28:01.033  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Starting SpringBootMybatisApplication using Java 1.8.0_121 on TYF666 with PID 6280 (F:\SBProjects\spring-boot-mybatis\target\classes started by yuanFangT in F:\SBProjects\spring-boot-mybatis)
+2021-09-14 11:28:01.033 DEBUG 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-09-14 11:28:01.033  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : No active profile set, falling back to default profiles: default
+2021-09-14 11:28:01.348  INFO 6280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2021-09-14 11:28:01.353  INFO 6280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-14 11:28:01.354  INFO 6280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-14 11:28:01.389  INFO 6280 --- [restartedMain] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
+2021-09-14 11:28:01.391  INFO 6280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 357 ms
+2021-09-14 11:28:01.580  INFO 6280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-14 11:28:01.602  INFO 6280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/springboot'
+2021-09-14 11:28:01.605  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Started SpringBootMybatisApplication in 0.611 seconds (JVM running for 533.019)
+2021-09-14 11:28:01.610  INFO 6280 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-09-14 11:28:01.909  INFO 7468 --- [main] com.yuanfang.UserServiceTests            : Starting UserServiceTests using Java 1.8.0_121 on TYF666 with PID 7468 (started by yuanFangT in F:\SBProjects\spring-boot-mybatis)
+2021-09-14 11:28:01.909 DEBUG 7468 --- [main] com.yuanfang.UserServiceTests            : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-09-14 11:28:01.909  INFO 7468 --- [main] com.yuanfang.UserServiceTests            : No active profile set, falling back to default profiles: default
+2021-09-14 11:28:05.103  INFO 7468 --- [main] com.yuanfang.UserServiceTests            : Started UserServiceTests in 3.81 seconds (JVM running for 5.203)
+2021-09-14 11:28:05.447  INFO 7468 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-14 11:28:06.594 DEBUG 7468 --- [main] com.yuanfang.service.UserService         : id：null===》姓名：小明===》年龄：50
+2021-09-14 11:28:06.621 DEBUG 7468 --- [main] com.yuanfang.dao.UserDAO.save            : ==>  Preparing: insert into t_user values (?,?,?) 
+2021-09-14 11:28:06.647 DEBUG 7468 --- [main] com.yuanfang.dao.UserDAO.save            : ==> Parameters: null, 小明(String), 50(Integer)
+2021-09-14 11:28:06.655 DEBUG 7468 --- [main] com.yuanfang.dao.UserDAO.save            : <==    Updates: 1
+2021-09-14 11:28:06.707  INFO 7468 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-09-14 11:28:06.710  INFO 7468 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-09-14 11:28:36.017  INFO 6280 --- [Thread-25] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2021-09-14 11:28:36.174  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Starting SpringBootMybatisApplication using Java 1.8.0_121 on TYF666 with PID 6280 (F:\SBProjects\spring-boot-mybatis\target\classes started by yuanFangT in F:\SBProjects\spring-boot-mybatis)
+2021-09-14 11:28:36.174 DEBUG 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-09-14 11:28:36.174  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : No active profile set, falling back to default profiles: default
+2021-09-14 11:28:36.510  INFO 6280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2021-09-14 11:28:36.510  INFO 6280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-14 11:28:36.510  INFO 6280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-14 11:28:36.537  INFO 6280 --- [restartedMain] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
+2021-09-14 11:28:36.537  INFO 6280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 355 ms
+2021-09-14 11:28:36.704  INFO 6280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-14 11:28:36.718  INFO 6280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/springboot'
+2021-09-14 11:28:36.720  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Started SpringBootMybatisApplication in 0.589 seconds (JVM running for 568.135)
+2021-09-14 11:28:36.720  INFO 6280 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-09-14 11:28:37.871  INFO 7896 --- [main] com.yuanfang.UserServiceTests            : Starting UserServiceTests using Java 1.8.0_121 on TYF666 with PID 7896 (started by yuanFangT in F:\SBProjects\spring-boot-mybatis)
+2021-09-14 11:28:37.871 DEBUG 7896 --- [main] com.yuanfang.UserServiceTests            : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-09-14 11:28:37.877  INFO 7896 --- [main] com.yuanfang.UserServiceTests            : No active profile set, falling back to default profiles: default
+2021-09-14 11:28:38.657  INFO 6280 --- [Thread-29] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2021-09-14 11:28:38.854  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Starting SpringBootMybatisApplication using Java 1.8.0_121 on TYF666 with PID 6280 (F:\SBProjects\spring-boot-mybatis\target\classes started by yuanFangT in F:\SBProjects\spring-boot-mybatis)
+2021-09-14 11:28:38.855 DEBUG 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-09-14 11:28:38.855  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : No active profile set, falling back to default profiles: default
+2021-09-14 11:28:39.293  INFO 6280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2021-09-14 11:28:39.294  INFO 6280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-14 11:28:39.294  INFO 6280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-14 11:28:39.312  INFO 6280 --- [restartedMain] o.a.c.c.C.[.[localhost].[/springboot]    : Initializing Spring embedded WebApplicationContext
+2021-09-14 11:28:39.312  INFO 6280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 452 ms
+2021-09-14 11:28:39.472  INFO 6280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-14 11:28:39.496  INFO 6280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path '/springboot'
+2021-09-14 11:28:39.502  INFO 6280 --- [restartedMain] c.yuanfang.SpringBootMybatisApplication  : Started SpringBootMybatisApplication in 0.721 seconds (JVM running for 570.913)
+2021-09-14 11:28:39.505  INFO 6280 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-09-14 11:28:41.581  INFO 7896 --- [main] com.yuanfang.UserServiceTests            : Started UserServiceTests in 4.369 seconds (JVM running for 5.985)
+2021-09-14 11:28:41.948  INFO 7896 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-09-14 11:28:43.075 DEBUG 7896 --- [main] c.yuanfang.service.impl.UserServiceImpl  : id：null===》姓名：小明===》年龄：50
+2021-09-14 11:28:43.418 DEBUG 7896 --- [main] com.yuanfang.dao.UserDAO.save            : ==>  Preparing: insert into t_user values (?,?,?) 
+2021-09-14 11:28:43.454 DEBUG 7896 --- [main] com.yuanfang.dao.UserDAO.save            : ==> Parameters: null, 小明(String), 50(Integer)
+2021-09-14 11:28:43.454 DEBUG 7896 --- [main] com.yuanfang.dao.UserDAO.save            : <==    Updates: 1
+2021-09-14 11:28:43.577  INFO 7896 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-09-14 11:28:43.581  INFO 7896 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

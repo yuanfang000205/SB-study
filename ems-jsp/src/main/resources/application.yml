@@ -1,0 +1,32 @@
+server:
+  port: 8282
+  servlet:
+    context-path: /ems-jsp
+    jsp:
+      init-parameters:
+        development: true #开启jsp模板开发模式
+
+# 配置jsp模板
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3333/ems-jsp?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+#配置mybatis
+mybatis:
+  mapper-locations: classpath:com/yuanfang/mapper/*.xml
+  type-aliases-package: com.yuanfang.entity
+
+#配置日志使用
+logging:
+  level:
+    root: info
+    com.yuanfang: debug #指定包日志
+

@@ -1,0 +1,23 @@
+server:
+  port: 8181
+  servlet:
+    context-path: /springboot
+# 整合mybatis相关配置
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3333/bootssm?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath:com/yuanfang/mapper/*.xml  #指定mapper配置文件位置
+  type-aliases-package: com.yuanfang.entity  #指定实体类的别名 默认：类名首字母小写
+# 日志配置
+logging:
+  level:
+    root: info #全局日志级别
+    com.yuanfang: debug #指定包日志级别
+  file:
+    name: run.log
+    path: / #当前项目目录
