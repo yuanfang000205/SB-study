@@ -1,0 +1,21 @@
+server:
+  port: 8383
+  servlet:
+    context-path: /springboot3
+    jsp:
+      init-parameters:
+        development: true #jsp开发模式
+spring:
+  mvc:
+    view:
+      prefix: / #配置视图前缀
+      suffix: .jsp #配置视图后缀
+  servlet:
+    multipart: #设置文件大小
+      max-file-size: 120MB #上传文件最大限制
+      max-request-size: 120MB #服务器处理文件最大限制
+#配置日志级别
+logging:
+  level:
+    root: info
+    com.yuanfang: debug
