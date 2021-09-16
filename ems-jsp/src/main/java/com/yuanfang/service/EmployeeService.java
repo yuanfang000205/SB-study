@@ -36,4 +36,6 @@ public interface EmployeeService {
      * @return
      */
     Employee findEmpById(Integer id);
+
+    void delete(Integer id);
 }

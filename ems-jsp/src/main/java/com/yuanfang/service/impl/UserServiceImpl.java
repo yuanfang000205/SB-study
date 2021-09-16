@@ -4,16 +4,7 @@ import com.yuanfang.dao.UserDAO;
 import com.yuanfang.entity.User;
 import com.yuanfang.service.UserService;
 import org.springframework.stereotype.Service;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 import org.springframework.transaction.annotation.Transactional;
->>>>>>> e615503... 用户登录、查询员工列表以及添加和更新员工信息
->>>>>>> 84c9a3e... 用户登录、添加和更新以及查询员工信息
->>>>>>> 9044dc1... 用户登录、添加和更新以及查询员工信息
 import org.springframework.util.DigestUtils;
 import org.springframework.util.ObjectUtils;
 
@@ -27,16 +18,8 @@ import java.nio.charset.StandardCharsets;
  * @Date 2021/9/14
  **/
 @Service
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 @Transactional
->>>>>>> e615503... 用户登录、查询员工列表以及添加和更新员工信息
->>>>>>> 84c9a3e... 用户登录、添加和更新以及查询员工信息
->>>>>>> 9044dc1... 用户登录、添加和更新以及查询员工信息
+
 public class UserServiceImpl implements UserService {
 
     @Resource
@@ -54,13 +37,6 @@ public class UserServiceImpl implements UserService {
         user.setPassword(passwordSecret);
         userDAO.save(user);
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
     /**
      * 用户登录
      * @param username 用户名
@@ -81,7 +57,4 @@ public class UserServiceImpl implements UserService {
         }
         return user;
     }
->>>>>>> e615503... 用户登录、查询员工列表以及添加和更新员工信息
->>>>>>> 84c9a3e... 用户登录、添加和更新以及查询员工信息
->>>>>>> 9044dc1... 用户登录、添加和更新以及查询员工信息
 }

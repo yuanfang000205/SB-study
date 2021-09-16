@@ -36,4 +36,6 @@ public interface EmployeeDAO {
      * @return
      */
     Employee findById(Integer id);
+
+    void delete(Integer id);
 }

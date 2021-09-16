@@ -13,12 +13,7 @@ public interface UserService {
      * 用户注册
      */
     void register(User user);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
+
 
     /**
      * 用户登录
@@ -27,7 +22,4 @@ public interface UserService {
      * @return User
      */
     User login(String username, String password);
->>>>>>> e615503... 用户登录、查询员工列表以及添加和更新员工信息
->>>>>>> 84c9a3e... 用户登录、添加和更新以及查询员工信息
->>>>>>> 9044dc1... 用户登录、添加和更新以及查询员工信息
 }

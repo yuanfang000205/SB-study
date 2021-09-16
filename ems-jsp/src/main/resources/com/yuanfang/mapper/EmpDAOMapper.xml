@@ -20,4 +20,9 @@
         update `employee` set name=#{name},birthday=#{birthday},salary=#{salary},gender=#{gender}
         where id = #{id}
     </update>
+    <!--删除员工-->
+    <delete id="delete" parameterType="Integer">
+        delete from `employee`
+        where id = #{id}
+    </delete>
 </mapper>

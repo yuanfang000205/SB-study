@@ -82,16 +82,9 @@
 						</table>
 						<p>
 							<input type="submit" class="button" value="Submit &raquo;" />
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
+
 							<input type="button" class="button" onclick="location.href='${pageContext.request.contextPath}/login.jsp'" value="Login &raquo;" />
->>>>>>> e615503... 用户登录、查询员工列表以及添加和更新员工信息
->>>>>>> 84c9a3e... 用户登录、添加和更新以及查询员工信息
->>>>>>> 9044dc1... 用户登录、添加和更新以及查询员工信息
+
 						</p>
 					</form>
 				</div>

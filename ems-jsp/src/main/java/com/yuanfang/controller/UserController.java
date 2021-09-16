@@ -67,12 +67,7 @@ public class UserController {
         }
         return "redirect:/login.jsp";
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
+
 
     @RequestMapping("login")
     public String login(String username,String password,HttpSession session) throws UnsupportedEncodingException {
@@ -88,7 +83,5 @@ public class UserController {
 
         return "redirect:/employee/list";
     }
->>>>>>> e615503... 用户登录、查询员工列表以及添加和更新员工信息
->>>>>>> 84c9a3e... 用户登录、添加和更新以及查询员工信息
->>>>>>> 9044dc1... 用户登录、添加和更新以及查询员工信息
+
 }

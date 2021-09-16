@@ -72,4 +72,15 @@ public class EmployeeController {
         employeeService.update(employee);
         return "redirect:/employee/list";
     }
+
+    /**
+     * 删除员工
+     * @param id 员工id
+     * @return
+     */
+    @RequestMapping("delete")
+    public String deleteEmployee(Integer id){
+        employeeService.delete(id);
+        return "redirect:/employee/list";
+    }
 }
