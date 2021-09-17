@@ -1,18 +1,10 @@
 server:
   port: 8080
-  tomcat:
-    uri-encoding: utf-8
   servlet:
-    encoding:
-      charset: UTF-8
-      force: true
-      enabled: true
     jsp:
       init-parameters:
         development: true
 spring:
-  messages:
-    encoding: UTF-8
   mvc:
     view:
       prefix: /

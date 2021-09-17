@@ -16,6 +16,9 @@ import java.util.Map;
  **/
 @RestController
 public class TestInjectionController {
+
+    @Value("张三")
+    private String username;
     @Value("${bir}")
     private Date bir;
     @Value("${lists}")
@@ -25,8 +28,9 @@ public class TestInjectionController {
 
     @RequestMapping("testInject")
     public String TestInject() {
+        System.out.println(111111111);
 
-        System.out.println("bir = " + bir);
+        //System.out.println("bir = " + bir);
         for (String list : lists) {
             System.out.println(list);
         }

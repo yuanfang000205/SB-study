@@ -1,5 +1,6 @@
 package com.yuanfang.controller;
 
+import org.aspectj.util.FileUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -7,9 +8,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -53,7 +58,7 @@ public class FileController {
     }
 
     @Value("${file.upload.dir}")
-    private String realPath;
+    private String uploadPath;
 
     /**
      * 第二种文件上传
@@ -69,6 +74,7 @@ public class FileController {
         log.debug("文件名: {}", originalFilename);
         log.debug("文件大小: {}", file.getSize());
         log.debug("文件类型: {}", file.getContentType());
+        log.debug("绝对路径：{}",uploadPath);
 
         //改名
         String ext = originalFilename.substring(originalFilename.lastIndexOf("."));
@@ -76,8 +82,46 @@ public class FileController {
 
 
         //上传文件到哪
-        file.transferTo(new File(realPath,newFileName));
+        file.transferTo(new File(uploadPath,newFileName));
 
         return  "redirect:/upload.jsp";
     }
+
+    @Value("${file.download.dir}")
+    private String downloadPath;
+    /**
+     * 测试文件下载
+     * @param fileName 下载的文件名
+     * @param response 响应参数
+     * @return
+     */
+    @RequestMapping("download")
+    public void download(String fileName, HttpServletResponse response) throws IOException {
+        log.debug("当前下载文件名为：{}",fileName);
+        log.debug("当前下载文件目录：{}",downloadPath);
+        //1.去指定目录中读取文件
+        File file = new File(downloadPath,fileName);
+        //2.将文件读取为输入流
+        FileInputStream is = new FileInputStream(file);
+        //获取响应流之前设置以附件的形式下载
+        response.setHeader("content-disposition","attachment;filename=" + URLEncoder.encode(fileName,"UTF-8"));
+        //3.获取响应输出流
+        ServletOutputStream os = response.getOutputStream();
+        //4.将输入流复制给输出流
+        //定义数据缓冲
+        //byte[] b = new byte[1024];
+        ////读取数据长度
+        //int len;
+        //while (true){
+        //    len = is.read(b);
+        //    if (len == -1) {
+        //        break;
+        //    }
+        //    os.write(b,0,len);
+        //}
+        ////5.释放资源
+        //is.close();
+        FileUtil.copyStream(is, os);
+    }
+
 }

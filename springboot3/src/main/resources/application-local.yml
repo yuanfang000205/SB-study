@@ -1,0 +1,8 @@
+
+# 指定文件上传位置
+file:
+  upload:
+    dir: C:\Users\WE\Desktop\upload #指定本地测试上传目录
+# 指定文件下载位置
+  download:
+    dir: C:\Users\WE\Desktop\download

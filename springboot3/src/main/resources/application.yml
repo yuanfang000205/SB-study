@@ -14,6 +14,9 @@ spring:
     multipart: #设置文件大小
       max-file-size: 120MB #上传文件最大限制
       max-request-size: 120MB #服务器处理文件最大限制
+  profiles:
+    active: local
+
 #配置日志级别
 logging:
   level:

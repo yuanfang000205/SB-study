@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date 2021/9/12
  **/
 @RestController
-@ConfigurationProperties(value = "users")
+@ConfigurationProperties(prefix = "users")
 public class InjectionObjectController {
 
     private Integer id;
