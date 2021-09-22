@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SpringBoot之Thymeleaf使用</title>
+    <!--
+        th:href="@{/}"
+    -->
+    <link th:href="@{/demo.css}" rel="stylesheet">
+    <script type="text/javascript" th:src="@{/demo.js}">
+    </script>
+    <script>
+        //通过js代码获取应用名  通过thymeleaf语法获取项目名
+        //使用thymeleaf内联表达式 [[thymeleaf]]
+        let contextPath = "[[@{/}]]"
+        console.log("项目名",contextPath)
+    </script>
+</head>
+<body>
+<h1>Thymeleaf的测试案例</h1>
+<h3>测试数据</h3>
+<!-- th:text="${变量名}" : 数据以文本形式展示-->
+<h4>接收单个数据：<span th:text="${name}"></span></h4>
+<h4>接收单个数据：<span th:text="${age}"></span></h4>
+<!-- th:utext="${属性名}" 获取数据 作用: 直接将获取数据先解析成html标签在渲染到页面 -->
+<h4>接收带有标签数据：<span th:utext="${h}"></span></h4>
+<h4>接收对象数据：
+<!--    整个对象<span th:utext="${user}"/>对象里数据-->
+    id:<span th:text="${user.id}"/>
+    name:<span th:text="${user.name}"/>
+    salary:<span th:text="${user.salary}"/>
+    <!--#dates.format(格式化的对象，格式)-->
+    bir:<span th:text="${#dates.format(user.bir,'yyyy-MM-dd HH:mm:ss')}"/>
+</h4>
+<h4>接收集合对象：</h4>
+<!--遍历数据 th:each="变量(current_element当前遍历元素),变量(state遍历状态对象):集合" 遍历-->
+<ul>
+    <li th:each="user,state:${users}">
+        state count: <span th:text="${state.count}"></span>
+        state odd : <span th:text="${state.odd}"></span>
+        state even : <span th:text="${state.even}"></span>
+        state size : <span th:text="${state.size}"></span>
+        id: <span th:text="${user.id}"></span>
+        name: <span th:text="${user.name}"></span>
+        salary: <span th:text="${user.salary}"></span>
+        birthday: <span th:text="${#dates.format(user.bir,'yyyy年MM月dd日')}"></span>
+    </li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,10 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /sth
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/   #指定前缀目录名
+    suffix: .html                 #指定后缀名
+    cache: false                  #是否开启缓存，true/false。不开启缓存实时刷新
+
