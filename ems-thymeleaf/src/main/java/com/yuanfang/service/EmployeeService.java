@@ -22,4 +22,22 @@ public interface EmployeeService {
      * @param employee
      */
     void add(Employee employee);
+
+    /**
+     * 根据id查询员工信息
+     * @param id
+     */
+    Employee findById(Integer id);
+
+    /**
+     * 更新员工信息
+     * @param employee
+     */
+    void update(Employee employee);
+
+    /**
+     * 根据员工id删除员工信息
+     * @param id
+     */
+    void delete(Integer id);
 }

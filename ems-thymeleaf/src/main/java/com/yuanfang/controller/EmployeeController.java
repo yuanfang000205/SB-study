@@ -31,6 +31,11 @@ public class EmployeeController {
     @Value("${photo.file.dir}")
     private String realpath;
 
+    /**
+     * 查询员工列表
+     * @param model
+     * @return
+     */
     @RequestMapping("lists")
     public String emplist(Model model){
         //获取员工列表数据
@@ -54,6 +59,57 @@ public class EmployeeController {
             employee.setPhoto(newFileName);
             employeeService.add(employee);
         }
+        return "redirect:/employee/lists";
+    }
+    /**
+     * 删除员工
+     */
+    @RequestMapping("delete")
+    public String delete(Integer id){
+        String photo = employeeService.findById(id).getPhoto();
+        //删除员工信息
+        employeeService.delete(id);
+        //删除员工头像
+        File file = new File(realpath, photo);
+        if (file.exists()){
+            file.delete();
+        }
+        return "redirect:/employee/lists";
+    }
+
+    /**
+     * 根据id查询员工详情信息
+     * @return
+     */
+    @RequestMapping("detail")
+    public String detail(Integer id,Model model){
+        Employee employee = employeeService.findById(id);
+        model.addAttribute("employee",employee);
+        return "updateEmp";
+    }
+    /**
+     * 更新员工信息
+     */
+    @RequestMapping("update")
+    public String update(Employee employee, MultipartFile img) throws IOException {
+        boolean notEmpty = !img.isEmpty();
+        //1.判断是否更新头像
+        if (notEmpty) {
+            //1.删除老的头像 根据id查询原始头像
+            String oldPhoto = employeeService.findById(employee.getId()).getPhoto();
+            File file = new File(realpath, oldPhoto);
+            if (file.exists()) {
+                file.delete();//删除文件
+            }
+            //2.处理新的头像上传
+            String originalFilename = img.getOriginalFilename();
+            String newFileName = uploadPhoto(img, originalFilename);
+            //3.修改员工新的头像名称
+            employee.setPhoto(newFileName);
+        }
+        //2.没有更新头像直接更新基本信息
+        employeeService.update(employee);
+        //更新成功,跳转到员工列表
         return "redirect:/employee/lists";
     }
 

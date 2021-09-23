@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns:th="http://www.thymealf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<title>添加员工信息</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="stylesheet" type="text/css"
-			href="css/style.css" />
+			th:href="@{/css/style.css}" />
 	</head>
 
 	<body>
@@ -36,7 +36,7 @@
 							class="form_table">
 							<tr>
 								<td valign="middle" align="right">
-									姓名:
+									*姓名:
 								</td>
 								<td valign="middle" align="left">
 									<input type="text" class="inputgri" name="name" />
@@ -44,7 +44,7 @@
 							</tr>
 							<tr>
 								<td valign="middle" align="right">
-									头像:
+									*头像:
 								</td>
 								<td valign="middle" align="left">
 									<input type="file" width="" name="img" />
@@ -52,7 +52,7 @@
 							</tr>
 							<tr>
 								<td valign="middle" align="right">
-									工资:
+									*工资:
 								</td>
 								<td valign="middle" align="left">
 									<input type="text" class="inputgri" name="salary" />
@@ -60,7 +60,7 @@
 							</tr>
 							<tr>
 								<td valign="middle" align="right">
-									生日:
+									*生日:
 								</td>
 								<td valign="middle" align="left">
 									<input type="text" class="inputgri" name="birthday" />

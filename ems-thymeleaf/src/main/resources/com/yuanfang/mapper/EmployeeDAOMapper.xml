@@ -8,4 +8,15 @@
     <insert id="save" parameterType="Employee" useGeneratedKeys="true" keyProperty="id">
         insert into `emp` values (#{id},#{name},#{salary},#{birthday},#{photo})
     </insert>
+    <select id="findById" resultType="Employee" parameterType="Integer">
+        select id,name,salary,birthday,photo from `emp`
+        where id = #{id}
+    </select>
+    <update id="update" parameterType="Employee">
+        update `emp` set name=#{name},salary=#{salary},birthday=#{birthday},photo=#{photo}
+        where id = #{id}
+    </update>
+    <delete id="delete" parameterType="Integer">
+        delete from `emp` where id = #{id}
+    </delete>
 </mapper>
