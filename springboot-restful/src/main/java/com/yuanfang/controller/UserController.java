@@ -1,5 +1,6 @@
 package com.yuanfang.controller;
 
+import com.yuanfang.entity.Pet;
 import com.yuanfang.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 /**
  * @ClassName UserController
@@ -33,7 +35,7 @@ public class UserController {
     //PathVariable:代表在路径中获取请求参数
     //ResponseBody:将控制器方法返回值转回json
     public ResponseEntity<User> user(@PathVariable("id") Integer id){
-        log.info("本次id：{}",id);
+        log.info("本次查询id：{}",id);
         User user = new User(12,"建军",56.9);
         return new ResponseEntity<>(user, HttpStatus.OK);
     }
@@ -69,7 +71,7 @@ public class UserController {
      */
     @PutMapping("/{id}")
     public ResponseEntity<Void> update(@PathVariable("id") Integer id,@RequestBody User user){
-        log.info("本次id：{}",id);
+        log.info("本次修改id：{}",id);
         log.info("name:{} score:{}",user.getName(),user.getScore());
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
@@ -79,5 +81,11 @@ public class UserController {
 
         log.info("本次删除id：{}",id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
+    @GetMapping("/{id}/pets/{pid}")
+    public ResponseEntity<Pet> pets(@PathVariable("id") Integer id, @PathVariable("pid") Integer pid){
+        Pet pet = new Pet(15, "建军", 6);
+        return new ResponseEntity<>(pet,HttpStatus.OK);
     }
 }
