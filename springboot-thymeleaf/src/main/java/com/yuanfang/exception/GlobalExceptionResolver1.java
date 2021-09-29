@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  * @Date 2021/9/29
  **/
 @Component
-public class GlobalExceptionResolver implements HandlerExceptionResolver {
+class GlobalExceptionResolver1 implements HandlerExceptionResolver {
     /**
      * resolveException：当控制器中任意一个方法出现异常时，若该控制器中的方法没有自己进行异常处理，则进入全局处理
      * @param httpServletRequest   当前请求对象
