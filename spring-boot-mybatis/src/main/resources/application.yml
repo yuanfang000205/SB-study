@@ -21,3 +21,4 @@ logging:
   file:
     name: run.log
     path: / #当前项目目录
+

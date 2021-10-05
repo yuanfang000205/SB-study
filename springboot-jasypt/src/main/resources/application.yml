@@ -1,0 +1,18 @@
+mysql:
+  host: ENC(+21G/SYV8XrEDI5wCUbNNPacuvowMfuJ)
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${mysql.host}:3333/bootssm?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: ENC(zEcilX/9gieZ8iTcNfKwMA==)
+    password: ENC(zEcilX/9gieZ8iTcNfKwMA==)
+mybatis:
+  mapper-locations: classpath:com/yuanfang/mapper/*.xml  #指定mapper配置文件位置
+  type-aliases-package: com.yuanfang.entity  #指定实体类的别名 默认：类名首字母小写
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES #默认指定加密方式
+#   password: cf150b74e4824146ad76e9ebe757ba76 #使用加密秘钥
+#   程序导入秘钥 -Djasypt.encryptor.password=cf150b74e4824146ad76e9ebe757ba76
+#   password: aaaa #使用加密秘钥
